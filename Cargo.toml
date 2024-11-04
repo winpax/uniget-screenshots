@@ -1,6 +1,8 @@
 [package]
 edition = "2021"
-name = "library-name"
+name = "uniget-screenshots"
 version = "0.1.0"
 
 [dependencies]
+serde = { version = "1.0.214", features = ["derive"] }
+url = { version = "2.5.2", features = ["serde"] }
