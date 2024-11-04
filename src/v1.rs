@@ -3,7 +3,7 @@
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 
-use crate::v2::PackageImages;
+pub use crate::v2::PackageImages;
 
 crate::database_url!("https://raw.githubusercontent.com/marticliment/UniGetUI/main/WebBasedData/screenshot-database.json");
 
