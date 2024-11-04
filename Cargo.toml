@@ -1,5 +1,6 @@
 [package]
 edition = "2021"
+include = ["src/**/*", "Cargo.toml", "README.md", "CHANGELOG.MD", "tests/**/*"]
 license = "Apache-2.0"
 name = "uniget-screenshots"
 version = "0.1.0"
