@@ -19,7 +19,7 @@ pub struct Database {
     ///
     /// Please note the package names are normalized.
     /// See [the documentation](https://marticliment.com/unigetui/help/icons-and-screenshots/#normalized-ids) for more information.
-    pub packages: HashMap<String, PackageImages>,
+    pub icons_and_screenshots: HashMap<String, PackageImages>,
 }
 
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
