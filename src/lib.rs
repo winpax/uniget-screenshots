@@ -9,6 +9,7 @@
 )]
 #![allow(clippy::module_name_repetitions)]
 
+#[deprecated(note = "If possible, v2 should be used instead")]
 pub mod v1;
 pub mod v2;
 

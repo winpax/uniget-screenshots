@@ -2,8 +2,6 @@
 //!
 //! While this module is deprecated, it will not be removed for backwards compatibility.
 
-#![deprecated(note = "If possible, v2 should be used instead")]
-
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 
