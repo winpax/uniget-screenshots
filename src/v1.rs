@@ -1,7 +1,9 @@
-#![deprecated(note = "Use `v2` instead. This will not be removed for backwards compatibility.")]
+#![deprecated(note = "If possible, v2 should be used instead")]
 
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
+
+use crate::v2::PackageImages;
 
 crate::database_url!("https://raw.githubusercontent.com/marticliment/UniGetUI/main/WebBasedData/screenshot-database.json");
 
@@ -18,10 +20,4 @@ pub struct PackageCount {
     scoop: u64,
     total: u64,
     done: u64,
-}
-
-#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
-pub struct PackageImages {
-    icon: url::Url,
-    images: Vec<url::Url>,
 }

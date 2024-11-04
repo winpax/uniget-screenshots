@@ -4,10 +4,9 @@ use std::collections::HashMap;
 super::database_url!("https://raw.githubusercontent.com/marticliment/UniGetUI/main/WebBasedData/screenshot-database-v2.json");
 
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
-#[expect(deprecated)]
 pub struct ScreenshotDatabase {
     package_count: PackageCount,
-    packages: HashMap<String, super::v1::PackageImages>,
+    packages: HashMap<String, PackageImages>,
 }
 
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
@@ -17,4 +16,10 @@ pub struct PackageCount {
     packages_with_icon: u64,
     packages_with_screenshot: u64,
     total_screenshots: u64,
+}
+
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
+pub struct PackageImages {
+    icon: url::Url,
+    images: Vec<url::Url>,
 }
